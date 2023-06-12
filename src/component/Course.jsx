@@ -9,7 +9,7 @@ export const Course = () => {
 
       <div className="row">
          <div className="course-col">
-            <h3>Intermediate</h3>
+            <h3>Part Time</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa aperiam possimus eos, reiciendis, ipsam impedit eum facere perferendis, suscipit sapiente tempore! Tempore sed repudiandae natus omnis commodi nam, quasi deleniti.</p>
          </div>
          <div className="course-col">
