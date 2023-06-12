@@ -1,5 +1,6 @@
 import { Campus } from "./component/Campus";
 import { Course } from "./component/Course";
+import { Facilities } from "./component/Facilities";
 import { Header } from "./component/Header";
 
 
@@ -12,6 +13,8 @@ function App() {
       <Course />
 
       <Campus />
+
+      <Facilities />
     </div>
   );
 }

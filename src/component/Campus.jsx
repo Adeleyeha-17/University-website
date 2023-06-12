@@ -4,7 +4,7 @@ export const Campus = () => {
     <div>
       <div className="campus">
          <h1>Our Global Campus</h1>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, odit! Hic suscipit aliquam impedit temporibus est aliquid sit architecto porro non quia! Minus iusto suscipit magnam consectetur autem aut earum?</p>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, odit! Hic suscipit aliquam</p>
 
          <div className="row">
             <div className="campus-col">
