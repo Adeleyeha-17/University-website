@@ -1,3 +1,4 @@
+import { Course } from "./component/Course";
 import { Header } from "./component/Header";
 
 
@@ -7,7 +8,7 @@ function App() {
    
       <Header />
       
-
+      <Course />
     </div>
   );
 }
