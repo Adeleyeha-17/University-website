@@ -165,6 +165,10 @@
     z-index: 2;
     transition: all .7s ease-in-out;
    }
+
+   #text-box #box-btn {
+    margin-left: 3.8rem;
+   }
  
    .close-btn {
     display: block;
