@@ -3,7 +3,7 @@ export const Course = () => {
   return (
     <div>
       <div className="course">
-      <h1>Course We Offer</h1>
+      <h1>{"Course's We Offer"}</h1>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et voluptate atque officia minima. Nostrum porro totam ipsum molestias tempora maxime dolor ab, quam, a deserunt ad sed corrupti, ducimus ipsa.</p>
       </div>
 

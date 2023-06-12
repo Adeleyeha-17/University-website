@@ -180,6 +180,59 @@
 }
 
 
+/* Campus Component */
+ .campus {
+  width: 80%;
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+ }
+
+ .campus-col {
+  flex-basis: 32%;
+  border-radius:10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+ }
+
+ .campus-col img {
+  width: 100%;
+  display: block;
+ }
+
+ .campus-col .layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.7s;
+ }
+
+ .layer:hover {
+  background: rgba(226 , 0 , 0, 0.1);
+ }
+
+ .layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: .5s;
+ }
+
+ .layer:hover h3 {
+  opacity: 1;
+  bottom: 49%;
+ }
+
+
 
 
 @media(max-width: 768px) {
