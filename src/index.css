@@ -242,6 +242,29 @@
   padding-top: 30px;
  }
 
+ .facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 3%;
+ }
+
+ .facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+ }
+
+ .facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 600;
+ }
+
+ .facilities-col p {
+  text-align: left;
+  width: fit-content;
+  padding: 0;
+ }
 
 
 @media(max-width: 768px) {
