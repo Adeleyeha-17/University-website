@@ -133,7 +133,7 @@
 @media(max-width: 768px) {
 
   nav #header-logo {
-    width: 14rem;
+    width: 9rem;
     height: 3rem;
     cursor: pointer;
     margin-top: 2rem;
