@@ -1,29 +1,26 @@
-import { CallToAction } from "./component/CallToAction";
-import { Campus } from "./component/Campus";
-import { Course } from "./component/Course";
-import { Facilities } from "./component/Facilities";
-import { Footer } from "./component/Footer";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { Home } from "./pages/Home";
 import { Header } from "./component/Header";
-import { Testimonials } from "./component/Testimonials";
-
+import { About } from "./pages/About";
+import { Courses } from "./pages/Courses";
+import { Blog } from "./pages/Blog";
+import { Contact } from "./pages/Contact";
 
 function App() {
   return (
     <div className="app">
    
-      <Header />
+   <Router>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/about" element={<About />} />
+      <Route path="/courses" element={<Courses />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+   </Router>
       
-      <Course />
-
-      <Campus />
-
-      <Facilities />
-
-      <Testimonials />
-
-      <CallToAction />
-
-      <Footer />
     </div>
   );
 }

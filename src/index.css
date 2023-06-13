@@ -25,7 +25,6 @@
   width: 20rem;
   height: 5rem;
   cursor: pointer;
-  /* flex: 1; */
  }
 
  nav #nav-link {
@@ -98,11 +97,6 @@
   z-index: 1;
   border-radius: 15px;
 }
-
-/* #text-box #box-btn a:hover {
-  background: #f44336;
-  border: 2px solid #f44336;
-} */
 
  #box-btn a::before {
   content: "";
@@ -323,7 +317,7 @@
 }
 
 
-/* Footer */
+/* Footer Component*/
 
 .footer {
   width: 100%;

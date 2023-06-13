@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 export const CallToAction = () => {
   return (
     <div>
@@ -6,7 +6,7 @@ export const CallToAction = () => {
          <h1>Enroll for our various online courses anywhere around the globe</h1>
 
          <div id="box-btn">
-         <a href="#">CONTACT US</a>
+         <a href="#"><Link to="/contact">CONTACT US</Link></a>
          </div>
          
       </div>

@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
+  const navigate = useNavigate();
   const [navMenu, setNavMenu] = useState(false);
   const mobileScreen = window.innerWidth <= 768;
 
@@ -18,7 +20,7 @@ export const Header = () => {
 
   return (
     <div className="header">
-      <nav>
+      <nav >
         <img src="logo.png" alt="" id="header-logo" />
 
         {(mobileScreen && !navMenu) || !mobileScreen ? (
@@ -36,11 +38,11 @@ export const Header = () => {
                 id="nav-link"
                 transition={transition}
               >
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>COURSES</li>
-                <li>BLOG</li>
-                <li>CONTACT</li>
+                <li onClick={() => navigate("/")}>HOME</li>
+                <li onClick={() => navigate("/about")}>ABOUT</li>
+                <li onClick={() => navigate("/courses")}>COURSES</li>
+                <li onClick={() => navigate("/blog")}>BLOG</li>
+                <li onClick={() => navigate("/contact")}>CONTACT</li>
               </motion.ul>
             )}
           </div>
@@ -61,29 +63,17 @@ export const Header = () => {
                   className="close-btn"
                   onClick={() => setNavMenu(false)}
                 />
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>COURSES</li>
-                <li>BLOG</li>
-                <li>CONTACT</li>
+                <li onClick={() => navigate("/")}>HOME</li>
+                <li onClick={() => navigate("/about")}>ABOUT</li>
+                <li onClick={() => navigate("/courses")}>COURSES</li>
+                <li onClick={() => navigate("/blog")}>BLOG</li>
+                <li onClick={() => navigate("/contact")}>CONTACT</li>
               </motion.ul>
             )}
           </AnimatePresence>
         )}
       </nav>
-
-      <div id="text-box">
-        <h1>{`World's Biggest University`}</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, velit?
-          Sunt vel quibusdam cupiditate sint blanditiis? Asperiores assumenda
-          optio repellat, quos eaque saepe illum dolor, incidunt debitis
-          accusantium ipsa inventore?
-        </p>
-        <div id="box-btn">
-          <a href="#">Visit to know more</a>
-        </div>
-      </div>
     </div>
+   
   );
 };
