@@ -322,6 +322,36 @@
   padding: 0;
 }
 
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.icons {
+  color: #f44336;
+  margin: 0 13px;
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  align-items:center; 
+  gap: 10px;
+}
+
+.socials-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
 @media(max-width: 768px) {
 
   /* Header component */
