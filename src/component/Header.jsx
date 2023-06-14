@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -63,11 +63,11 @@ export const Header = () => {
                   className="close-btn"
                   onClick={() => setNavMenu(false)}
                 />
-                <li onClick={() => navigate("/")}>HOME</li>
-                <li onClick={() => navigate("/about")}>ABOUT</li>
-                <li onClick={() => navigate("/courses")}>COURSES</li>
-                <li onClick={() => navigate("/blog")}>BLOG</li>
-                <li onClick={() => navigate("/contact")}>CONTACT</li>
+                <li onClick={() => setNavMenu(false)}><Link to="/" className="link">HOME</Link></li>
+                <li onClick={() => setNavMenu(false)}><Link to="/about" className="link">ABOUT</Link></li>
+                <li onClick={() => setNavMenu(false)}><Link to="/course" className="link">COURSES</Link></li>
+                <li onClick={() => setNavMenu(false)}><Link to="/blog" className="link">BLOG</Link></li>
+                <li onClick={() => setNavMenu(false)}><Link to="/contact" className="link">CONTACT</Link></li>
               </motion.ul>
             )}
           </AnimatePresence>

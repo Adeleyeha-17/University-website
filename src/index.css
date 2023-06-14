@@ -372,6 +372,11 @@
     display: block;
    }
 
+   .link {
+    text-decoration: none;
+    color: #fff;
+   }
+
    nav #nav-link {
     position: absolute;
     right: 0;
