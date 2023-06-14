@@ -65,7 +65,7 @@ export const Header = () => {
                 />
                 <li onClick={() => setNavMenu(false)}><Link to="/" className="link">HOME</Link></li>
                 <li onClick={() => setNavMenu(false)}><Link to="/about" className="link">ABOUT</Link></li>
-                <li onClick={() => setNavMenu(false)}><Link to="/course" className="link">COURSES</Link></li>
+                <li onClick={() => setNavMenu(false)}><Link to="/courses" className="link">COURSES</Link></li>
                 <li onClick={() => setNavMenu(false)}><Link to="/blog" className="link">BLOG</Link></li>
                 <li onClick={() => setNavMenu(false)}><Link to="/contact" className="link">CONTACT</Link></li>
               </motion.ul>
