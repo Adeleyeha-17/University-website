@@ -441,7 +441,6 @@
 /* Forms  */
 
 .comment-box {
-  border: 1px solid #f44336;
   margin: 50px 0;
   padding: 10px 20px;
 }
@@ -460,8 +459,44 @@
   background: #f0f0f0;
 }
 
-.comment-form button {
+.comment-form .submit-btn {
   margin: 10px 0;
+}
+
+.submit-btn {
+  width: 150px;
+  height: 30px;
+  color: #f44336;
+  background-color: transparent;
+  border: 1px solid #f44336;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 15px;
+}
+
+ .submit-btn::before {
+  content: "";
+  background-color: #f44336;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: .7s;
+}
+
+.submit-btn:hover {
+  color: white;
+}
+
+ .submit-btn:hover::before {
+  width: 100%;
 }
 @media(max-width: 768px) {
 

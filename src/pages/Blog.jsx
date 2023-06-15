@@ -34,9 +34,11 @@ export const Blog = () => {
                       <input type="text" placeholder="Enter Name" />
                       <input type="email"  placeholder="Enter Email"/>
                       <textarea  rows="5" placeholder="Your comment"></textarea>
-                      <button type="submit">
+                      <div className="box-btn">
+                      <button type="submit" className="submit-btn">
                         POST COMMENT
                       </button>
+                      </div>
                     </form>
                   </div>
                </div>
