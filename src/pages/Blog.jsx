@@ -5,10 +5,11 @@ export const Blog = () => {
 
    const [formData, setFormData] = useState({
       fullname: "",
-      email: ""
+      email: "",
+      comment: ""
    })
 
-   const {fullname, email} = formData;
+   const {fullname, email, comment} = formData;
 
    const onChange = (e) => {
       const {name, value} = e.target
@@ -55,7 +56,7 @@ export const Blog = () => {
                     <form onSubmit={onSubmit} className="comment-form">
                       <input type="text" name="fullname" placeholder="Enter Name" value={fullname} onChange={onChange}/>
                       <input type="email" name="email" placeholder="Enter Email" value={email} onChange={onChange}/>
-                      <textarea  rows="5" placeholder="Your comment"></textarea>
+                      <textarea  rows="5" placeholder="Your comment" name="comment" onChange={onChange} value={comment}></textarea>
                       <div className="box-btn">
                       <button type="submit" className="submit-btn">
                         POST COMMENT
