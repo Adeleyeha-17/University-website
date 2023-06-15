@@ -233,6 +233,7 @@
   margin: auto;
   text-align: center;
   padding-top: 30px;
+  margin-bottom: 50px;
  }
 
  .facilities-col {
@@ -386,6 +387,9 @@
 .about-row {
   text-align: left;
 }
+
+
+/* Course Page */
 
 
 @media(max-width: 768px) {
