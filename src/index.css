@@ -7,7 +7,7 @@
  .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(banner.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(background.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -345,6 +345,48 @@
   width: 20px;
   cursor: pointer;
 }
+
+
+/* About Page */
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.about-col img {
+  width: 100%;
+}
+
+.about-col h1 {
+  padding-top: 0;
+}
+
+.about-col p {
+  padding: 15px 0 25px;
+}
+
+#box-btn .explore-btn {
+  border: 1px solid #f44336;
+  background: transparent;
+  color: #f44336;
+}
+
+#box-btn .explore-btn:hover {
+  color:white;
+}
+
+.about-row {
+  text-align: left;
+}
+
 
 @media(max-width: 768px) {
 

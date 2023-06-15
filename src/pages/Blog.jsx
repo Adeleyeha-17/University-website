@@ -1,6 +1,9 @@
+import { Footer } from "../component/Footer"
 
 export const Blog = () => {
   return (
-    <div>Blog</div>
+    <div>
+      <Footer />
+    </div>
   )
 }
