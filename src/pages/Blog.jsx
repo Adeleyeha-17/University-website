@@ -1,6 +1,28 @@
+import { useState } from "react";
 import {Footer} from "../component/Footer"
 
 export const Blog = () => {
+
+   const [formData, setFormData] = useState({
+      fullname: "",
+      email: ""
+   })
+
+   const {fullname, email} = formData;
+
+   const onChange = (e) => {
+      const {name, value} = e.target
+      setFormData(prevState => ({
+         ...prevState,
+         [name] : value
+      }))
+   }
+
+   const onSubmit = (e) => {
+      e.preventDefault();
+      console.log(formData)
+   }
+
    return (
       <div className="blog">
 
@@ -30,9 +52,9 @@ export const Blog = () => {
                   <div className="comment-box">
                     <h3>Leave a comment</h3>
 
-                    <form className="comment-form">
-                      <input type="text" placeholder="Enter Name" />
-                      <input type="email"  placeholder="Enter Email"/>
+                    <form onSubmit={onSubmit} className="comment-form">
+                      <input type="text" name="fullname" placeholder="Enter Name" value={fullname} onChange={onChange}/>
+                      <input type="email" name="email" placeholder="Enter Email" value={email} onChange={onChange}/>
                       <textarea  rows="5" placeholder="Your comment"></textarea>
                       <div className="box-btn">
                       <button type="submit" className="submit-btn">
