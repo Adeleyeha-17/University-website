@@ -16,7 +16,7 @@ export const About = () => {
 
           </div>
           <div className="about-col">
-            <img src="about.jpg" alt="" />
+            <img src="about.jpeg" alt="" />
           </div>
         </div>
       </div>

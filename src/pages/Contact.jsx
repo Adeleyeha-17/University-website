@@ -35,7 +35,7 @@ export const Contact = () => {
             <div className="row">
                <div className="contact-col">
                   <div>
-                   <i className="icons">icon home</i>
+                   <img src="home.png" className="icons"/>
                      <span>
                         <h5>XYZ Road, FUY Building</h5>
                         <p>Berlin, Germany</p>
@@ -43,7 +43,7 @@ export const Contact = () => {
                   </div>
                
                   <div>
-                  <i className="icons">icon phone</i>
+                  <img src="phone.png" className="icons"/>
                      <span>
                         <h5>+1 5673949573</h5>
                         <p>Monday to Thursday, 10AM to 4PM</p>
@@ -51,7 +51,7 @@ export const Contact = () => {
                   </div>
                
                   <div>
-                  <i className="icons">icon envelope</i>
+                  <img src="envelope.png" className="icons"/>
                      <span>
                         <h5>info@eduford.edu.ng</h5>
                         <p>Email us</p>
@@ -83,3 +83,4 @@ export const Contact = () => {
       </div>
    )
 }
+

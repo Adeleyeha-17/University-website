@@ -8,18 +8,18 @@ export const Testimonials = () => {
 
          <div className="row">
             <div className="testimonial-col">
-               <img src="user1.jpg" alt="" />
+               <img src="face-img-1.jpg" alt="" />
                <div>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus libero sit ipsum ducimus! Exercitationem laudantium laborum maxime amet eveniet cum atque dolorem molestias esse! Numquam dicta labore exercitationem explicabo nulla!</p>
-                  <h3>Charles Barkley</h3>
+                  <h3>Christine Barkley</h3>
                </div>
             </div>
 
             <div className="testimonial-col">
-               <img src="user2.jpg" alt="" />
+               <img src="face-img-2.jpg" alt="" />
                <div>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus libero sit ipsum ducimus! Exercitationem laudantium laborum maxime amet eveniet cum atque dolorem molestias esse! Numquam dicta labore exercitationem explicabo nulla!</p>
-                  <h3>Matthew Barkley</h3>
+                  <h3>Matthew Henderson</h3>
                </div>
             </div>
          </div>

@@ -8,17 +8,17 @@ export const Facilities = () => {
 
          <div className="row">
             <div className="facilities-col">
-               <img src="library.png"/>
+               <img src="library.jpg"/>
                <h3>Our Library</h3>
                <p>You can be the next lebron james You can be the next lebron james  You can be the next lebron james</p>
             </div>
             <div className="facilities-col">
-               <img src="basketball.png"/>
+               <img src="basketball.jpg"/>
                <h3>Basketball Court</h3>
                <p>You can be the next lebron james You can be the next lebron james  You can be the next lebron james</p>
             </div>
             <div className="facilities-col">
-               <img src="cafeteria.png"/>
+               <img src="cafeteria.jpg"/>
                <h3>Healthy Food</h3>
                <p>You can be the next lebron james You can be the next lebron james  You can be the next lebron james</p>
             </div>

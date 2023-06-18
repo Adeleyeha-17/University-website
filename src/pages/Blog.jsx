@@ -32,7 +32,7 @@ export const Blog = () => {
          <div className="blog-content">
             <div className="row">
                <div className="blog-left">
-                  <img src="certificate.jpg" alt=""/>
+                  <img src="degree.jpg" alt=""/>
                   <h2>Our Ceritifcate & Online Programs for 2023</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatibus a delectus, corrupti nemo accusamus alias repellat totam, distinctio similique praesentium ratione! Quam dolore sequi earum culpa temporibus ipsa exercitationem?</p>
                   <br/>
