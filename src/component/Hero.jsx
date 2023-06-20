@@ -11,7 +11,7 @@ export const Hero = () => {
           accusantium ipsa inventore?
         </p>
         <div id="box-btn">
-          <a href="#"><Link to="/about">Visit to know more</Link></a>
+          <Link to="/about">Visit to know more</Link>
         </div>
       </div>
     </div>
