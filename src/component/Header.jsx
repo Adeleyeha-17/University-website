@@ -38,11 +38,11 @@ export const Header = () => {
                 id="nav-link"
                 transition={transition}
               >
-                <li onClick={() => navigate("/")}>HOME</li>
-                <li onClick={() => navigate("/about")}>ABOUT</li>
-                <li onClick={() => navigate("/courses")}>COURSES</li>
-                <li onClick={() => navigate("/blog")}>BLOG</li>
-                <li onClick={() => navigate("/contact")}>CONTACT</li>
+                <NavLink onClick={() => navigate("/")} target="_blank"><li >HOME</li></NavLink>
+                <NavLink onClick={() => navigate("/about")} target="_blank"><li>ABOUT</li></NavLink>
+                <NavLink onClick={() => navigate("/courses")} target="_blank"><li>COURSES</li></NavLink>
+                <NavLink onClick={() => navigate("/blog")} target="_blank"><li>BLOG</li></NavLink>
+                <NavLink onClick={() => navigate("/contact")} target="_blank"><li>CONTACT</li></NavLink>
               </motion.ul>
             )}
           </div>
