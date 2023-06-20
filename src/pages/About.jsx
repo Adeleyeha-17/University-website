@@ -11,7 +11,7 @@ export const About = () => {
             <h1>{`We are the world's largest university`}</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint similique sequi aspernatur necessitatibus perspiciatis non accusantium, vel doloribus dolorem sit saepe minus qui, sapiente assumenda quia vitae nesciunt! Consequuntur, praesentium!</p>
             <div id="box-btn">
-         <a><Link to="/courses" className="explore-btn">Explore Now</Link></a>
+         <Link to="/courses" className="explore-btn">Explore Now</Link>
          </div>
 
           </div>
