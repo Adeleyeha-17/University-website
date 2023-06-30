@@ -42,7 +42,7 @@ export const Header = () => {
                 <NavLink onClick={() => navigate("/about")} target="_blank"><li>ABOUT</li></NavLink>
                 <NavLink onClick={() => navigate("/courses")} target="_blank"><li>COURSES</li></NavLink>
                 <NavLink onClick={() => navigate("/blog")} target="_blank"><li>BLOG</li></NavLink>
-                <NavLink onClick={() => navigate("/contact")} target="_blank"><li>CONTACT</li></NavLink>
+                <NavLink onClick={() => navigate("/covantact")} target="_blank"><li>CONTACT</li></NavLink>
               </motion.ul>
             )}
           </div>

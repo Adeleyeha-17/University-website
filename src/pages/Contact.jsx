@@ -1,29 +1,16 @@
-import { useState } from "react"
 import { Footer } from "../component/Footer"
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 export const Contact = () => {
 
-  const [formData, setFormData] = useState({
-    fullname: "",
-    email: "",
-    subject: "",
-    message: ""
-  })
+   const form = useRef();
 
-  const { fullname, email, subject, message } = formData;
-
-  const onChange = (e) => {
-   const {name, value} = e.target;
-
-    setFormData(prevState => ({
-      ...prevState,
-      [name] : value
-    }))
-  }
-  
-  const onSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData)
-  }
+   const sendEmail = (e) => {
+     e.preventDefault();
+ 
+     emailjs.sendForm('service_fnlyk4i', 'template_fn6hk1h', form.current, 'zACzMzsFyBJCvFwsk')
+       e.target.reset()
+   };
 
    return (
       <div>
@@ -59,15 +46,15 @@ export const Contact = () => {
                   </div>
                </div>
                <div className="contact-col">
-      <form onSubmit={onSubmit}>
+      <form ref={form} onSubmit={sendEmail}>
 
-        <input type="text" placeholder="Enter your name" name="fullname" value={fullname} onChange={onChange} required/>
+        <input type="text" placeholder="Enter your name" name="fullname"  required/>
 
-        <input type="email" placeholder="Enter your email" name="email" value={email} onChange={onChange} required/>
+        <input type="email" placeholder="Enter your email" name="email"  required/>
         
-        <input type="text" placeholder="Enter your subject" name="subject" value={subject} onChange={onChange} required/>
+        <input type="text" placeholder="Enter your subject" name="subject" required/>
 
-        <textarea rows="8" placeholder="Message" name="message" value={message} onChange={onChange}></textarea>
+        <textarea rows="8" placeholder="Message" name="message" ></textarea>
 
         <div className="box-btn">
         <button type="submit" className="submit-btn">Send Message</button>
